@@ -1,6 +1,6 @@
 ~touch command is used in the command line to make a new file.
 
-	ex- touch newfile.txt 
+		ex- touch newfile.txt 
 		
 	(will bring up a new file with a txt extension. WE CAN MAKE ANY FILE WITH ANY EXTENSION.)
 
@@ -141,6 +141,45 @@ This is very convenient when you want to use a command that was executed before.
 
 
 
+//
+example
+
+
+1 Create the website directory
+~ $ mkdir website
+
+2 Move to the website directory
+~ $ cd website
+
+3 Create the top directory
+website $ mkdir top
+
+4 Move to the top directory
+website $ cd top
+
+5 Create top.html
+top $ touch top.html
+
+6 Create stylesheet.css
+top $ touch stylesheet.css
+
+7 Move to the website directory
+top $ cd ..
+
+8 Copy the top directory and create the about directory
+website $ cp -r top about
+
+9 Move to the about directory
+website $ cd about
+
+10 Rename top.html to about.html
+about $ mv top.html about.html
+
+11 Move to the home directory
+about $ cd
+
+12 Remove about.txt
+~ $ rm about.txt
 
 
 
